@@ -1,10 +1,10 @@
 import './App.css'
-import Hero from './components/Hero'
-import About from './components/About'
-import Skills from './components/Skills'
-import Education from './components/Education'
-import Contact from './components/Contact'
-import Projects from './components/Projects'
+import Hero from './components/Hero.jsx'
+import About from './components/About.jsx'
+import Skills from './components/Skills.jsx'
+import Education from './components/Education.jsx'
+import Contact from './components/Contact.jsx'
+import Projects from './components/Projects.jsx'
 function App() {
 
   return (
