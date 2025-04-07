@@ -1,0 +1,19 @@
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+}
+*{
+  font-size: large;
+}
+
+hr{
+  width: 75%;
+  margin: 20px auto;
+  opacity: 1;
+}
