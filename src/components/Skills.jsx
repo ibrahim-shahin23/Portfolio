@@ -6,17 +6,6 @@ const Skills = () => {
       <h1 className="text-center">Skills</h1>
       <div className="field">
         <div className="skill">
-          <i className="fas fa-database"></i> MySQL
-        </div>
-        <div className="skill">
-          <i className="fas fa-database"></i> PostgreSQL
-        </div>
-        <div className="skill">
-          <i className="fas fa-leaf"></i> MongoDB
-        </div>
-      </div>
-      <div className="field">
-        <div className="skill">
           <i
             className="fab f
 a-html5"
@@ -65,6 +54,17 @@ a-html5"
           <i className="fas fa-cogs"></i> Odoo
         </div>
       </div>{' '}
+      <div className="field">
+        <div className="skill">
+          <i className="fas fa-database"></i> MySQL
+        </div>
+        <div className="skill">
+          <i className="fas fa-database"></i> PostgreSQL
+        </div>
+        <div className="skill">
+          <i className="fas fa-leaf"></i> MongoDB
+        </div>
+      </div>
       <div className="field">
         <div className="skill">
           <i className="fab fa-github"></i> GitHub

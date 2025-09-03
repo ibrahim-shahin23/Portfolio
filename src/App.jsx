@@ -5,12 +5,16 @@ import Skills from './components/Skills.jsx'
 import Education from './components/Education.jsx'
 import Contact from './components/Contact.jsx'
 import Projects from './components/Projects.jsx'
+import ExperienceShowcase from './components/Experience.jsx'
+
 function App() {
 
   return (
     <>
     <Hero/>
     <About/>
+    <hr />
+    <ExperienceShowcase/>
     <hr />
     <Projects/>
     <hr />
