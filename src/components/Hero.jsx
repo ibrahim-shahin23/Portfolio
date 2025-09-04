@@ -1,6 +1,9 @@
 import heroImage from "../assets/profile purple.jpeg";
+import { useScroll } from "../contexts/ScrollContext";
 
 const Hero = () => {
+
+  const {scrollToSection} = useScroll()
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
       {/* Animated background elements */}
@@ -30,10 +33,10 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 animate-fade-in-up animation-delay-900">
-                <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <button onClick={()=>scrollToSection('projects')} className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
                   View My Work
                 </button>
-                <button className="px-8 py-3 border border-purple-400 text-purple-300 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300">
+                <button onClick={()=>scrollToSection('contact')} className="px-8 py-3 border border-purple-400 text-purple-300 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300">
                   Contact Me
                 </button>
               </div>
@@ -62,7 +65,7 @@ const Hero = () => {
       </div>
 
       {/* Custom animations */}
-      <style jsx>{`
+      <style jsx="true">{`
         @keyframes fade-in-up {
           from {
             opacity: 0;
