@@ -39,7 +39,7 @@ const About = () => {
             
             <div className="pt-6">
               <a 
-                href='https://drive.google.com/file/d/19gMEIYDP2KW0FqIq84SkuRRTr7bzjf84/view?usp=sharing' 
+                href='https://drive.google.com/file/d/1yWK49otPBAa5bU3vUxRs3p3SOg_cRhRb/view?usp=sharing' 
                 target='_blank' 
                 rel="noopener noreferrer"
                 className='inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 text-sm sm:text-base'

@@ -5,6 +5,8 @@ import { Calendar, MapPin, ExternalLink, ChevronDown } from 'lucide-react';
 import iti from "../assets/ITI logo.jpeg";
 import voltrack from "../assets/voltrack_pro_logo.jpeg";
 import appssquare from "../assets/apps_square_logo.jpeg";
+import megadev from "../assets/mega_dev1_logo.jpg";
+import GFD from "../assets/gfd_galaxy_for_development_logo.jpg";
 
 const ExperienceCard = ({ 
   company,
@@ -139,11 +141,36 @@ const ExperienceCard = ({
 const Experience = () => {
   const experiences = [
     {
+      company: "Mega Development",
+      logo: megadev,
+      jobTitle: "Backend Engineer",
+      location: "Tanta",
+      duration: "Mar 2026 - Present",
+      description: "Engineering highly throughput data system to monitor regional driver activity across KSA.",
+      achievements: [
+        "Developed robust data pipelines to generate automated financial insights, managing accounting workflows such as multi-party settlements and dynamic commissions."],
+      technologies: ["React", "Flask", "Python", "NodeJS"],
+      companyUrl: "#"
+    },
+    {
+      company: "Galaxy for Development (GFD)",
+      logo: GFD,
+      jobTitle: "Software and Leadership Instructor",
+      location: "Cairo",
+      duration: "Sep 2025 - Present",
+      description: "working in WE Applied Technology Schools under the management of the Ministry of Communications and Information Technology (MCIT), Egypt — a journey of teaching, mentoring, and applying practical programming and development skills.",
+      achievements: [
+        "From the foundations of HTML, CSS, and JavaScript, to building with Bootstrap, mastering databases and MySQL, diving deep into advanced Python, OOP, and data structures and algorithms — every step has been about empowering students with real-world skills",
+        "We also explored creativity through graphic design with Photoshop and Illustrator, and nurtured innovation with design thinking and problem solving."],
+      technologies: ["HTML","CSS","JavaScript","Bootstrap","Github","React", "Laravel", "Python", "NodeJS","Express","Mysql","Photoshop","Illustrator"],
+      companyUrl: "#"
+    },
+    {
       company: "Apps Square",
       logo: appssquare,
       jobTitle: "Odoo Developer",
       location: "Tanta",
-      duration: "Jul 2025 - Present",
+      duration: "Jul 2025 - Feb 2026",
       description: "Responsible for developing, customizing, and maintaining Odoo ERP modules to meet business requirements",
       achievements: [
         "Developed an ERP system for a leading holding company specializing in hearing aids, optics, and pharmacies managing clinic operations, appointments, insurance company integrations, and tax agency confirmations.",
@@ -170,16 +197,13 @@ const Experience = () => {
     {
       company: "Information Technology Institute",
       logo: iti,
-      jobTitle: "Full Stack Developer",
-      duration: "Nov 2024 - Mar 2025",
+      jobTitle: "Software Programming Instructor",
+      duration: "June 2025 - present",
       location: "Tanta",
-      description: "Full Stack Development Intensive Training Program.",
+      description: "Programming Instructor — Teaching undergraduate students in summer training programs.",
       achievements: [
-        "Gained hands-on experience in Python programming, Django, Flask, and Odoo for back-end development.",
-        "Created databases with MySQL and PostgreSQL.",
-        "Built responsive front-end applications with React framework, Bootstrap and MUI.",
-        "Learned version control with Git and containerization with Docker.",
-        "Enhanced soft skills, including presentation, communication, and interviewing techniques."
+        "teaching modern Computer Science and Technology (CST) concepts, focusing on full-stack application development.", 
+        "Delivering engaging live lectures, guiding hands-on projects, and providing constructive feedback to help students master practical software development skills."
       ],
       technologies: ["HTML", "CSS", "Javascript", "React", "PostgreSQL", "Python", "Django", "Odoo", "Flask", "Git", "Docker"],
       companyUrl: "#"
