@@ -5,6 +5,13 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "RAG Copilot",
+      description: "Enterprise-Grade Autonomous Retrieval-Augmented Generation & Agentic Curriculum Engine. Production-ready, highly resilient RAG and multi-agent orchestration platform engineered around Clean Architecture principles.",
+      link: "https://rag-copilot-chi.vercel.app/docs",
+      tech: ["Fast-Api", "Sqlite", "RAG"],
+      gradient: "from-red-500 to-green-600"
+    },
+    {
       title: "Virtual Book Fair",
       description: "The Virtual Book Fair is an online platform designed to connect publishers, authors, and readers in a seamless digital environment. It offers three main interfaces: Admin Dashboard, Publisher Dashboard, and User Website, each providing specialized functionalities to manage accounts, books, sales, and user interactions efficiently.",
       link: "https://reader-hub-ui.vercel.app/",
