@@ -5,8 +5,15 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Weather Route Planner",
+      description: "Weather-aware truck routing system that compares three routes by wind, rain and snow at the time you will actually be there to helps a truck driver choose the safest route based on weather,load weight, and travel time.",
+      link: "https://weather-route-planner-ui.vercel.app/",
+      tech: ["Django", "React", "Recommendation System"],
+      gradient: "from-teal-500 to-blue-600"
+    },
+    {
       title: "RAG Copilot",
-      description: "Enterprise-Grade Autonomous Retrieval-Augmented Generation & Agentic Curriculum Engine. Production-ready, highly resilient RAG and multi-agent orchestration platform engineered around Clean Architecture principles.",
+      description: "Enterprise-Grade Autonomous Retrieval-Augmented Generation & Agentic Curriculum Engine. Production-ready, highly resilient and multi-agent orchestration platform engineered around Clean Architecture principles.",
       link: "https://rag-copilot-chi.vercel.app/docs",
       tech: ["Fast-Api", "Sqlite", "RAG"],
       gradient: "from-red-500 to-green-600"
