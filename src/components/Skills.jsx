@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Code, Database, Globe, Wrench, BarChart, Star } from 'lucide-react';
+import { Code, Database, Globe, Wrench, BarChart, BrainCircuit, Star } from 'lucide-react';
 
 const Skills = () => {
   const [hoveredCategory, setHoveredCategory] = useState(null);
@@ -9,21 +9,24 @@ const Skills = () => {
       title: "Frontend Technologies",
       icon: <Globe className="w-6 h-6" />,
       gradient: "from-blue-500 to-cyan-500",
+      skillHoverColor: "group-hover/skill:text-blue-500",
       skills: [
         { name: "HTML5", level: 95, icon: "🌐" },
         { name: "CSS3", level: 90, icon: "🎨" },
         { name: "JavaScript", level: 88, icon: "⚡" },
-        { name: "jQuery", level: 80, icon: "📱" },
         { name: "React", level: 90, icon: "⚛️" },
         { name: "Next.js", level: 85, icon: "🚀" },
+        { name: "Flutter", level: 80, icon: "📱" },
         { name: "Material-UI", level: 80, icon: "🎭" },
-        { name: "Bootstrap", level: 85, icon: "📐" }
+        { name: "Bootstrap", level: 95, icon: "📐" },
+        { name: "jQuery", level: 80, icon: "📱" },
       ]
     },
     {
       title: "Backend Technologies",
       icon: <Code className="w-6 h-6" />,
       gradient: "from-purple-500 to-pink-500",
+      skillHoverColor: "group-hover/skill:text-purple-500",
       skills: [
         { name: "Python", level: 92, icon: "🐍" },
         { name: "Django", level: 88, icon: "🎯" },
@@ -37,6 +40,7 @@ const Skills = () => {
       title: "Databases",
       icon: <Database className="w-6 h-6" />,
       gradient: "from-green-500 to-teal-500",
+      skillHoverColor: "group-hover/skill:text-green-500",
       skills: [
         { name: "MySQL", level: 88, icon: "🐬" },
         { name: "PostgreSQL", level: 90, icon: "🐘" },
@@ -47,6 +51,7 @@ const Skills = () => {
       title: "Tools & DevOps",
       icon: <Wrench className="w-6 h-6" />,
       gradient: "from-orange-500 to-red-500",
+      skillHoverColor: "group-hover/skill:text-orange-500",
       skills: [
         { name: "GitHub", level: 90, icon: "🐙" },
         { name: "BitBucket", level: 80, icon: "🪣" },
@@ -58,6 +63,7 @@ const Skills = () => {
       title: "Data & Analytics",
       icon: <BarChart className="w-6 h-6" />,
       gradient: "from-indigo-500 to-purple-500",
+      skillHoverColor: "group-hover/skill:text-indigo-500",
       skills: [
         { name: "Machine Learning", level: 78, icon: "🧠" },
         { name: "Data Analysis", level: 82, icon: "📊" },
@@ -108,7 +114,7 @@ const Skills = () => {
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-2">
                         <span className="text-lg">{skill.icon}</span>
-                        <span className="font-medium text-gray-700 group-hover/skill:text-purple-600 transition-colors duration-200">
+                        <span className={`font-medium text-gray-700 ${category.skillHoverColor} transition-colors duration-200`}>
                           {skill.name}
                         </span>
                       </div>
@@ -144,7 +150,7 @@ const Skills = () => {
             <div className="flex flex-wrap justify-center items-center gap-6 text-gray-600">
               <div className="flex items-center space-x-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                <span className="font-medium">2+ Years Experience</span>
+                <span className="font-medium">3+ Years Experience</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Code className="w-5 h-5 text-blue-500" />
@@ -155,7 +161,11 @@ const Skills = () => {
                 <span className="font-medium">Database Design</span>
               </div>
               <div className="flex items-center space-x-2">
-                <BarChart className="w-5 h-5 text-purple-500" />
+                <BrainCircuit className="w-5 h-5 text-purple-500" />
+                <span className="font-medium">AI Integration</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <BarChart className="w-5 h-5 text-pink-500" />
                 <span className="font-medium">Data Analysis</span>
               </div>
             </div>
