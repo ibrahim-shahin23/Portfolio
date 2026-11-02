@@ -37,14 +37,25 @@ const About = () => {
             {/* Skills tags */}
             <div className="flex flex-wrap gap-2 sm:gap-3 pt-4">
               {[
-                'React',
-                'Django',
-                'Node.js',
                 'Python',
-                'AI/ML',
-                'MongoDB',
-                'PostgreSQL',
+                'Django',
+                'Flask',
+                'FastAPI',
+                'Odoo',
+                'React',
+                'Node.js',
+                'Nest.js',
                 'Next.js',
+                'SQL',
+                'PostgreSQL',
+                'MySQL',
+                'AI/ML',
+                'Flutter',
+                'Dart',
+                'NoSQL',
+                'MongoDB',
+                'Git',
+                'Docker',
               ].map((skill) => (
                 <span
                   key={skill}
